@@ -1,0 +1,120 @@
+﻿<customer-ui></customer-ui> <br /><br />
+
+
+@*<div ng-controller="myCntrl">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <h1>Customer Details Page</h1>
+    <br />
+    
+    <div class="row">
+            <div class="col-sm-2"><input type="button" class="btnAdd" value=" Add Employee" ng-click="AddEmployeeDiv()" /></div>
+            <div class="divList col-sm-9">
+                <p class="divHead">Employee List</p>
+                <table cellpadding="12" class="table table-bordered table-hover">
+                    <tr>
+                        <td><b>ID</b></td>
+                        <td><b>Name</b></td>
+                        <td><b>Address1</b></td>
+                        <td><b>Address2</b></td>
+                        <td><b>City</b></td>
+                        <td><b>State</b></td>
+                        <td><b>Zipcode</b></td>
+                        <td><b>Country</b></td>
+                    </tr>
+                    <tr ng-repeat="employee in employees">
+                        <td>
+                            {{employee.id}}
+                        </td>
+                        <td>
+                            {{employee.Name}}
+                        </td>
+                        <td>
+                            {{employee.Address1}}
+                        </td>
+                        <td>
+                            {{employee.Address2}}
+                        </td>
+                        <td>
+                            {{employee.City}}
+                        </td>
+                        <td>
+                            {{employee.State}}
+                        </td>
+                        <td>
+                            {{employee.Zipcode}}
+                        </td>
+                        <td>
+                            {{employee.Country}}
+                        </td>
+                        <td>
+                            <span ng-click="editEmployee(employee)" class="btnAdd">Edit</span>
+                            <span ng-click="deleteEmployee(employee)" class="btnRed">Delete</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div ng-show="divEmployee" class="col-sm-9">
+            <p class="divHead">{{Action}} Employee</p>
+            <table>
+                <tr>
+                    <td><b>Id</b></td>
+                    <td>
+                        <input type="text" disabled="disabled" ng-model="id" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>
+                        <input type="text" ng-model="Name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Address1</b></td>
+                    <td>
+                        <input type="text" ng-model="Address1" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Address2</b></td>
+                    <td>
+                        <input type="text" ng-model="Address2" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>City</b></td>
+                    <td>
+                        <input type="text" ng-model="City" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>State</b></td>
+                    <td>
+                        <input type="text" ng-model="State" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Zipcode</b></td>
+                    <td>
+                        <input type="text" ng-model="Zipcode" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Country</b></td>
+                    <td>
+                        <input type="text" ng-model="Country" />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" class="btnAdd" value="Save" ng-click="AddUpdateEmployee()" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>*@

@@ -1,0 +1,38 @@
+﻿<div class='row'>
+    <customerDb-Add></customerDb-Add>
+</div>
+<div class='row'>
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class='panel-heading'>CustomerDB List</div>
+        <div class='panel-body'>
+            <table class='table table-condensed'>
+                <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Address1</th>
+                <th>Address2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zipcode</th>
+                <th>Country</th>
+                <th></th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let _cust of _customers">
+                        <td> {{_cust.id}}  </td>
+                        <td> <input type="text" [(ngModel)]="_cust.Name" name="Name" class="form-control" /> </td>
+                        <td> <input type="text" [(ngModel)]="_cust.Address1" name="Address1" class="form-control" /> </td>
+                        <td> <input type="text" [(ngModel)]="_cust.Address2" name="Address2" class="form-control" /> </td>
+                        <td> <input type="text" [(ngModel)]="_cust.City" name="City" class="form-control" /> </td>
+                        <td> <input type="text" [(ngModel)]="_cust.State" name="State" class="form-control" /> </td>
+                        <td> <input type="text" [(ngModel)]="_cust.Zipcode" name="Zipcode" class="form-control" /> </td>
+                        <td> <input type="text" [(ngModel)]="_cust.Country" name="Country" class="form-control" /> </td>
+                        <td> <input type="button" value="update" class="btn btn-default" (click)="onUpdate(_cust)" />
+                         <input type="button" value="remove" class="btn btn-danger" (click)="onDelete(_cust.id)" /></td>
+                    </tr>
+                <tbody>
+            </table>
+        </div>
+    </div>
+</div>

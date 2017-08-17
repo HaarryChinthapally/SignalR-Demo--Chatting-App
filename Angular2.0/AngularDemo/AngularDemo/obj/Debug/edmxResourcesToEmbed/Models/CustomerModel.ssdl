@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="angularModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="angularModelStoreContainer">
+    <EntitySet Name="tblcustomers" EntityType="angularModel.Store.tblcustomers" store:Type="Tables" Schema="angular" />
+  </EntityContainer>
+  <EntityType Name="tblcustomers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="varchar" MaxLength="45" />
+    <Property Name="Address1" Type="varchar" MaxLength="45" />
+    <Property Name="Address2" Type="varchar" MaxLength="45" />
+    <Property Name="City" Type="varchar" MaxLength="45" />
+    <Property Name="State" Type="varchar" MaxLength="45" />
+    <Property Name="Zipcode" Type="varchar" MaxLength="45" />
+    <Property Name="Country" Type="varchar" MaxLength="45" />
+  </EntityType>
+</Schema>

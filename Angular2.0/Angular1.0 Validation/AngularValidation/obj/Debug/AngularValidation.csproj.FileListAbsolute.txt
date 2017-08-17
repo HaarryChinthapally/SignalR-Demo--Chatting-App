@@ -1,0 +1,15 @@
+C:\Users\harikrishna ch\Desktop\AngularValidation\AngularValidation\bin\AngularValidation.dll.config
+C:\Users\harikrishna ch\Desktop\AngularValidation\AngularValidation\bin\AngularValidation.dll
+C:\Users\harikrishna ch\Desktop\AngularValidation\AngularValidation\bin\AngularValidation.pdb
+C:\Users\harikrishna ch\Desktop\AngularValidation\AngularValidation\bin\Newtonsoft.Json.dll
+C:\Users\harikrishna ch\Desktop\AngularValidation\AngularValidation\bin\Newtonsoft.Json.xml
+C:\Users\harikrishna ch\Desktop\AngularValidation\AngularValidation\obj\Debug\AngularValidation.csprojResolveAssemblyReference.cache
+C:\Users\harikrishna ch\Desktop\AngularValidation\AngularValidation\obj\Debug\AngularValidation.dll
+C:\Users\harikrishna ch\Desktop\AngularValidation\AngularValidation\obj\Debug\AngularValidation.pdb
+C:\Users\Administrator\Desktop\Downloads\AngularValidation\AngularValidation\bin\AngularValidation.dll
+C:\Users\Administrator\Desktop\Downloads\AngularValidation\AngularValidation\bin\AngularValidation.pdb
+C:\Users\Administrator\Desktop\Downloads\AngularValidation\AngularValidation\bin\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Downloads\AngularValidation\AngularValidation\bin\Newtonsoft.Json.xml
+C:\Users\Administrator\Desktop\Downloads\AngularValidation\AngularValidation\obj\Debug\AngularValidation.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\Downloads\AngularValidation\AngularValidation\obj\Debug\AngularValidation.dll
+C:\Users\Administrator\Desktop\Downloads\AngularValidation\AngularValidation\obj\Debug\AngularValidation.pdb

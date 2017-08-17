@@ -1,0 +1,44 @@
+﻿<form [formGroup]="currentCustomer.CustomerGroupValidator">
+    pristine {{currentCustomer.CustomerGroupValidator.pristine}}<br />
+    touched {{currentCustomer.CustomerGroupValidator.touched}}<br />
+    <div>
+        <!--Customer Name object to UI:-<input [ngModel]="customerobj.CustomerName" id="Text1" type="text" /><br />
+        Customer Name UI to the object:-<input (input)="customerobj.CustomerName=$event.target.value" id="Text1" type="text" /><br />
+        Customer Name 2 way :-<input [ngModel]="customerobj.CustomerName" (input)="customerobj.CustomerName=$event.target.value" id="Text1" type="text" /><br />-->
+        Customer Type  :-<select [ngModelOptions]="{standalone:true}"
+                                 [ngModel]="CustomerType"
+                                 (ngModelChange)="onCustomerTypeChange($event)">
+            <option value="Lead">Lead</option>
+            <option value="Customer">Customer</option>
+        </select><br />
+        Customer Name  :-<input formControlName="CustomerName"
+                                [(ngModel)]="currentCustomer.CustomerName" id="Text1" type="text" />
+        <div *ngIf="(currentCustomer.IsDirty('CustomerName')==true)"
+             [hidden]="currentCustomer.IsValid('CustomerName','required')">Customer Name is required</div>
+        <br />
+        Customer Code :-<input formControlName="CustomerCode"
+                               [(ngModel)]="currentCustomer.CustomerCode" id="Text1" type="text" />
+        <div *ngIf="(currentCustomer.IsDirty('CustomerCode')==true)"
+             [hidden]="currentCustomer.IsValid('CustomerCode','required')">Customer Code is required</div>
+        <div *ngIf="(currentCustomer.IsDirty('CustomerCode')==true)"
+             [hidden]="currentCustomer.IsValid('CustomerCode','pattern')">Customer Code should be of a format C1001,X9008</div>
+        <br />
+        Customer Amount :-<input formControlName="CustomerAmount"
+                                 [(ngModel)]="currentCustomer.CustomerAmount" id="Text1" type="text" />
+        <div *ngIf="(currentCustomer.IsDirty('CustomerAmount')==true)"
+             [hidden]="currentCustomer.IsValid('CustomerAmount','required')">Customer Amount is required</div>
+        <br />
+        <input type="button" [disabled]="!(currentCustomer.IsValid())" (click)="Add()" value="Add Customer" />
+        <input type="button" (click)="Update()" value="Update Customer" />
+        <input type="button" (click)="Clear()" value="Cancel" />
+        <input type="button" (click)="Submit()" value="Submits" />
+        <input type="button" (click)="loadData()" value="GetAll" />
+        <b>{{currentCustomer.CustomerName}}</b><br />
+        {{currentCustomer.CustomerCode}}<br />
+        {{currentCustomer.CustomerAmount}}<br />
+        <grid-ui [grid-data]="customers"
+                 [grid-entityname]="'Customer'"
+                 (grid-selected)="Select($event)">
+        </grid-ui><br /><br />
+    </div>
+</form>
